@@ -13,12 +13,27 @@ public:
 	void SkrivUt();
 };
 
+//Funktioner
+
+int linsok(Person myList[], int amountofpeople, int age) {
+	for (int i = 0; i < 10; i++){
+		//Om det är personen vi söker: 
+		if (myList[i].age == age)
+			return i;
+	}
+
+	return-1; //Personen hittades ej. 
+}
+
+
+void bubblesort(Person myList[], int n) {
+
+}
+
 
 int main()
 {
 	setlocale(LC_ALL, "swedish");
-
-
 
 	return 0;
 }
